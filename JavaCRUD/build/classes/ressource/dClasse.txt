@@ -1,0 +1,22 @@
+@startuml
+class Utilisateur {
+	{field} -ut_pseudo:String
+	{field} -ut_nom:String
+	{field} -ut_prenom:String
+	{field} -ut_mp:String
+	{field} -ut_mail:String
+  __
+  << constructeur >>
+  {method} +Utilisateur
+  << setters & getters >>
+  {method} +getUt_Pseudo
+  {method} ~setUt_Pseudo
+  {method} +getUt_Nom
+  {method} +setUt_Nom
+  << Autres methodes>>
+  {method} #cryptePass
+}
+note top of Utilisateur :Le nom de la classe
+note right of Utilisateur :les attributs de\nla classe
+note bottom of Utilisateur :les méthodes de la classe
+@enduml
